@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планети Сонячної Системи</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #111111;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00baff;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00baff;
+        }
+
+        main {
+            padding: 120px 40px 40px;
+        }
+
+        .planet-section {
+            margin-bottom: 50px;
+            border: 1px solid #00baff;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #2c2c2c;
+        }
+
+        .planet-section h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00baff;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #111111;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .fact {
+            margin-top: 20px;
+            font-style: italic;
+            color: #a0a0a0;
+        }
+
+        .planet-description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .planet-description span {
+            font-weight: bold;
+            color: #00baff;
+        }
+
+        .contact-link {
+            font-size: 1.5rem;
+            color: #00baff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #00baff;
+            border-radius: 8px;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background-color: #00baff;
+            color: #111111;
+            transform: scale(1.1);
+        }
+
+        .contact-link:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #00baff;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .contact-link:hover:after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Сонячна Система</div>
+            <ul class="nav-links">
+                <li><a href="#sun">Сонце</a></li>
+                <li><a href="#mercury">Меркурій</a></li>
+                <li><a href="#venus">Венера</a></li>
+                <li><a href="#earth">Земля</a></li>
+                <li><a href="#mars">Марс</a></li>
+                <li><a href="#jupiter">Юпітер</a></li>
+                <li><a href="#saturn">Сатурн</a></li>
+                <li><a href="#uranus">Уран</a></li>
+                <li><a href="#neptune">Нептун</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sun" class="planet-section">
+            <h1>Сонце</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Зірка</p>
+                <p><span>Діаметр:</span> 1,391,000 км</p>
+                <p><span>Температура:</span> близько 5,500°C на поверхні, до 15,000,000°C в центрі</p>
+                <p>Сонце — це зірка в центрі нашої сонячної системи. Воно випромінює світло та тепло, які підтримують життя на Землі. Сонце складається в основному з водню (близько 75%) і гелію (близько 23%), а решта 2% складаються з важчих елементів.</p>
+                <p class="fact">Цікавий факт: Сонце містить близько 99,86% маси всієї Сонячної системи.</p>
+            </div>
+        </section>
+
+        <section id="mercury" class="planet-section">
+            <h1>Меркурій</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 4,880 км</p>
+                <p><span>Відстань від Сонця:</span> 57.9 мільйонів км</p>
+                <p><span>Температура:</span> від -173°C до 427°C</p>
+                <p>Меркурій — найтісніше планета до Сонця. Він не має атмосфери, тому температура на його поверхні сильно коливається. Через свою близькість до Сонця Меркурій швидко обертається навколо своєї осі, роблячи один оберт за 59 земних днів.</p>
+                <p class="fact">Цікавий факт: Меркурій має найтриваліший день серед усіх планет Сонячної системи, його доба триває 176 земних днів.</p>
+            </div>
+        </section>
+
+        <section id="venus" class="planet-section">
+            <h1>Венера</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 12,104 км</p>
+                <p><span>Відстань від Сонця:</span> 108.2 мільйони км</p>
+                <p><span>Температура:</span> близько 464°C</p>
+                <p>Венера відома своєю щільною атмосферою, яка створює парниковий ефект, роблячи її найгарячішою планетою Сонячної системи. Атмосфера Венери складається в основному з вуглекислого газу, що значно підвищує температуру її поверхні.</p>
+                <p class="fact">Цікавий факт: Венера обертається в зворотному напрямку порівняно з іншими планетами Сонячної системи, тому на ній Сонце сходить на заході і сідає на сході.</p>
+            </div>
+        </section>
+
+        <section id="earth" class="planet-section">
+            <h1>Земля</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 12,742 км</p>
+                <p><span>Відстань від Сонця:</span> 149.6 мільйонів км</p>
+                <p><span>Температура:</span> від -88°C до 58°C</p>
+                <p>Земля — наша рідна планета, унікальна своєю атмосферою та здатністю підтримувати життя. Вона має стабільний клімат, різноманітні екосистеми та водойми. Земля обертається навколо своєї осі, створюючи зміну дня і ночі.</p>
+                <p class="fact">Цікавий факт: Земля — єдина планета, на якій є вода в рідкому стані на поверхні.</p>
+            </div>
+        </section>
+
+        <section id="mars" class="planet-section">
+            <h1>Марс</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 6,779 км</p>
+                <p><span>Відстань від Сонця:</span> 227.9 мільйонів км</p>
+                <p><span>Температура:</span> від -125°C до 20°C</p>
+                <p>Марс відомий своїм червоним кольором, спричиненим окисленням заліза в ґрунті. Він має атмосферу, що складається в основному з вуглекислого газу, і в минулому, ймовірно, на Марсі існувала рідка вода.</p>
+                <p class="fact">Цікавий факт: На Марсі знаходиться найбільша гора в Сонячній системі — Олімп, висота якої складає 21,9 км.</p>
+            </div>
+        </section>
+
+        <section id="jupiter" class="planet-section">
+            <h1>Юпітер</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 139,820 км</p>
+                <p><span>Відстань від Сонця:</span> 778.3 мільйонів км</p>
+                <p><span>Температура:</span> близько -108°C</p>
+                <p>Юпітер — найбільша планета Сонячної системи, відома своїми смугами хмар та Великою червоною плямою. Це газовий гігант, в основному складається з водню та гелію.</p>
+                <p class="fact">Цікавий факт: Юпітер має понад 79 відомих супутників, серед яких найбільший супутник Сонячної системи — Ганімед.</p>
+            </div>
+        </section>
+
+        <section id="saturn" class="planet-section">
+            <h1>Сатурн</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 116,460 км</p>
+                <p><span>Відстань від Сонця:</span> 1.429 мільярдів км</p>
+                <p><span>Температура:</span> близько -139°C</p>
+                <p>Сатурн відомий своїми кільцями, що складаються з льоду та каменів. Це газовий гігант, атмосфера якого складається в основному з водню та гелію.</p>
+                <p class="fact">Цікавий факт: Кільця Сатурна можуть бути дуже тонкими, всього кілька кілометрів, але їхній діаметр складає 275,000 км.</p>
+            </div>
+        </section>
+
+        <section id="uranus" class="planet-section">
+            <h1>Уран</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 50,724 км</p>
+                <p><span>Відстань від Сонця:</span> 2.871 мільярдів км</p>
+                <p><span>Температура:</span> близько -224°C</p>
+                <p>Уран — це газовий гігант, який має унікальне нахилення осі, завдяки чому він обертається на боці. Це холодна планета, покрита льодовими хмарами.</p>
+                <p class="fact">Цікавий факт: Уран має 27 відомих супутників, і кожен з них має свою унікальну орбіту.</p>
+            </div>
+        </section>
+
+        <section id="neptune" class="planet-section">
+            <h1>Нептун</h1>
+            <div class="planet-description">
+                <p><span>Тип:</span> Планета</p>
+                <p><span>Діаметр:</span> 49,244 км</p>
+                <p><span>Відстань від Сонця:</span> 4.495 мільярдів км</p>
+                <p><span>Температура:</span> близько -218°C</p>
+                <p>Нептун — восьма планета Сонячної системи, відома своїми вітрами, які можуть досягати швидкості до 2,100 км/год. Це газовий гігант з атмосферою, що складається в основному з водню, гелію та метану.</p>
+                <p class="fact">Цікавий факт: Нептун був відкритий не завдяки спостереженням, а через математичні розрахунки.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="contact-link" href="https://t.me/wax606" target="_blank">Зв'язатись з автором сайту</a>
+    </footer>
+</body>
+</html>
